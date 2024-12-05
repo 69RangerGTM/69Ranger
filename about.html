@@ -100,7 +100,17 @@
 }
 
 
-        
+           /* ปรับสีพื้นหลังทึบและโปร่งใสสำหรับทั้งหน้า */
+    body {
+        background-color: rgba(0, 0, 0, 0.5);  /* สีดำโปร่งใส 50% */
+        margin: 0;
+        padding: 0;
+    }
+
+    .tm-bg {
+        background-color: rgba(0, 0, 0, 0.5);  /* สีดำโปร่งใส 50% */
+        height: 100vh;  /* ครอบคลุมทั้งหน้าจอ */
+    }
        
         </style>
 </head>
@@ -359,8 +369,8 @@
 
         <!-- Diagonal background design -->
         <div class="tm-bg">
-            <div class="tm-bg-left"></div>
-            <div class="tm-bg-right"></div>
+            <!-- <div class="tm-bg-left"></div>
+            <div class="tm-bg-right"></div> -->
         </div>
     </div>
     

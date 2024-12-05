@@ -16,8 +16,67 @@
         {
             margin-right: 5px; /* เพิ่มระยะห่าง */
         }
-       
     
+        /* ปรับขนาด carousel */
+        .carousel-inner img {
+            width: 565px; 
+        height: 800px; 
+}
+        
+
+         /* ปรับสีพื้นหลังทึบและโปร่งใสสำหรับทั้งหน้า */
+    body {
+        background-color: rgba(0, 0, 0, 0.5);  /* สีดำโปร่งใส 50% */
+        margin: 0;
+        padding: 0;
+    }
+
+    .tm-bg {
+        background-color: rgba(0, 0, 0, 0.5);  /* สีดำโปร่งใส 50% */
+        height: 100vh;  /* ครอบคลุมทั้งหน้าจอ */
+    }
+/* ปรับตำแหน่งปุ่มให้แสดงอยู่ด้านนอกของ Carousel */
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: 60px; /* ความกว้างของปุ่ม */
+    height: 60px; /* ความสูงของปุ่ม */
+}
+
+.carousel-control-prev {
+    left: -70px; /* ปรับให้ปุ่ม Previous อยู่ด้านซ้าย */
+}
+
+.carousel-control-next {
+    right: -70px; /* ปรับให้ปุ่ม Next อยู่ด้านขวา */
+}
+
+/* ปรับไอคอนของปุ่ม */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* ใส่สีพื้นหลังให้ไอคอน */
+    border-radius: 50%; /* ทำให้ไอคอนเป็นวงกลม */
+    padding: 15px; /* กำหนดระยะห่างของไอคอน */
+}
+.tm-service-media {
+    display: flex;
+    justify-content: center; /* จัดตำแหน่งแนวนอนให้ตรงกลาง */
+    align-items: center; /* จัดตำแหน่งแนวตั้งให้ตรงกลาง */
+    text-align: center; /* จัดข้อความให้ตรงกลาง */
+}
+
+.tm-service-img-r {
+    max-width: 100%;
+    height: auto;
+    margin-left: 20px; /* หากต้องการให้ภาพห่างจากเนื้อหา */
+}
+
+.tm-service-text {
+    max-width: 600px; /* ปรับขนาดของเนื้อหา */
+}
+
+
     </style>
 </head>
 
@@ -65,33 +124,142 @@
                 <div class="tm-col-left"></div>
                 <main class="tm-col-right">
                     <section class="tm-content">
-                        <div class="media my-3 mb-5 tm-service-media tm-service-media-img-l">
-                            <img src="img/services-1.jpg" alt="Image" class="tm-service-img">
-                            <div class="media-body tm-service-text">
-                                <h2 class="mb-4 tm-content-title"> 69 Ranger Gentleman</h2>
-                                <p>ก่อตั้งขึ้นในปี 1969 โดยกระทรวงกลาโหมสหรัฐเพื่อจัดตั้งหน่วยจู่โจมรบพิเศษภายใต้การดูแลของ USASOC และ US SOCOM เพื่อปฏิบัติภารกิจสำคัญทางยุทธศาสตร์และการปฏิบัติการลับต่าง ๆ ทั่วโลก</p>
-                            </div> 
-                        </div>
+                       
 
-                                              <div class="media my-3 mb-5 tm-service-media">                            
-                            <div class="media-body tm-service-text">
-                                <h2 class="mb-4 tm-content-title">169th Night Stalkers</h2>
-                                <p>ก่อตั้งขึ้นเมื่อวันที่ 9 สิงหาคม 1969 โดยมีเป้าหมายเพื่อสนับสนุนการปฏิบัติภารกิจลับทางอากาศ และเสริมสร้างความสามารถในการแทรกซึมและถอนกำลังในสภาพแวดล้อมที่ท้าทาย โดยใช้เครื่องบินและเฮลิคอปเตอร์ในการปฏิบัติงาน</p>
-                            </div> 
-                            <img src="img/services-2.jpg" alt="Image" class="tm-service-img-r">
-                        </div>
-                        <div class="media my-3 tm-service-media tm-service-media-img-l">
-                            <!-- <img src="img/services-1.jpg" alt="Image" class="tm-service-img"> -->
-                            <div class="media-body tm-service-text">
-                                <!-- <h2 class="mb-4 tm-content-title"> 69 Ranger Gentleman</h2>
-                                <p>The 69 Ranger Gentleman was established on September 6, 1969, as a special operations unit of the United States under the supervision of the Army, tasked with conducting assault missions in critical situations.</p> -->
-                                
-                            </div> 
-                        </div>                      
+                                              
+                                 
                     </section>
                 </main>
             </div>
         </div>        
+
+
+       <div class="media my-3 mb-5 tm-service-media d-flex justify-content-center align-items-center">
+    <img src="img/services-1.jpg" alt="Image" class="tm-service-img-r">
+    <div class="media-body tm-service-text">
+        <h2 class="mb-4 tm-content-title">69 Ranger Gentleman</h2>
+        <p>ก่อตั้งขึ้นในปี 1969 โดยกระทรวงกลาโหมสหรัฐเพื่อจัดตั้งหน่วยจู่โจมรบพิเศษภายใต้การดูแลของ USASOC และ US SOCOM เพื่อปฏิบัติภารกิจสำคัญทางยุทธศาสตร์และการปฏิบัติการลับต่าง ๆ ทั่วโลก</p>
+    </div>
+</div>
+
+
+        <div class="media my-3 mb-5 tm-service-media d-flex justify-content-center align-items-center">
+            <div class="media-body tm-service-text">
+                <h2 class="mb-4 tm-content-title">169th Night Stalkers</h2>
+                <p>ก่อตั้งขึ้นเมื่อวันที่ 9 สิงหาคม 1969 โดยมีเป้าหมายเพื่อสนับสนุนการปฏิบัติภารกิจลับทางอากาศ และเสริมสร้างความสามารถในการแทรกซึมและถอนกำลังในสภาพแวดล้อมที่ท้าทาย โดยใช้เครื่องบินและเฮลิคอปเตอร์ในการปฏิบัติงาน</p>
+            </div>
+            <img src="img/services-2.jpg" alt="Image" class="tm-service-img-r">
+        </div>
+  
+        <body>
+
+            <div id="imageCarousel" class="carousel slide" data-ride="carousel" style="max-width: 800px; margin: 0 auto;">
+                <div class="carousel-inner">
+                                    
+                    <!-- รูปที่ 1 -->
+                    <div class="carousel-item active">
+                         <img src="img/RA/1.png" alt="Image 1">
+                     </div>
+                    <div class="carousel-item">
+                        <img src="img/RA/2.png" alt="Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/RA/3.png" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/RA/4.png" alt="Image 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/RA/5.png" alt="Image 5">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/RA/6.png" alt="Image 6">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/RA/7.png" alt="Image 7">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/RA/8.png" alt="Image 8">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/RA/9.png" alt="Image 9">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/RA/10.png" alt="Image 10">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/RA/11.png" alt="Image 11">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/RA/12.png" alt="Image 12">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/RA/13.png" alt="Image 13">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/RA/14.png" alt="Image 14">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/RA/15.png" alt="Image 15">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/RA/16.png" alt="Image 16">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/RA/17.png" alt="Image 17">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/RA/18.png" alt="Image 18">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/RA/19.png" alt="Image 19">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/RA/20.png" alt="Image 20">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/RA/21.png" alt="Image 21">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/RA/22.png" alt="Image 22">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/RA/23.png" alt="Image 23">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/RA/24.png" alt="Image 24">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/RA/25.png" alt="Image 25">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/RA/26.png" alt="Image 26">
+                    </div>
+                
+                    
+        
+                    <!-- เพิ่มรูปที่เหลือตามที่ต้องการ -->
+                </div>
+        
+                <!-- ปุ่มสำหรับเลื่อนรูป -->
+                <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                
+            </div>
+        
+
+
+            
+            
+          
+        
+          
 
         <div class="tm-row">
             <div class="tm-col-left text-center">            
@@ -113,8 +281,8 @@
 
         <!-- Diagonal background design -->
         <div class="tm-bg">
-            <div class="tm-bg-left"></div>
-            <div class="tm-bg-right"></div>
+            <!-- <div class="tm-bg-left"></div>
+            <div class="tm-bg-right"></div> -->
         </div>
     </div>
  <script>
@@ -122,6 +290,8 @@
             history.pushState({}, '', '/69Ranger/');
         }
     </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>

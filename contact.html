@@ -85,6 +85,25 @@
                         <a href="https://discord.gg/RhcV5gPUMA">
                             <img src="img/Discord.png" alt="Discord" width="50" height="50" >
                         </a>
+                         <script>
+                            // ตรวจสอบว่า session นี้มีการนับแล้วหรือไม่
+                            if (!sessionStorage.getItem('hasVisited')) {
+                                // ถ้ายังไม่เคยนับใน session นี้
+                                if (!localStorage.getItem('visitCount')) {
+                                    localStorage.setItem('visitCount', 1); // กำหนดค่าเริ่มต้น
+                                } else {
+                                    let count = parseInt(localStorage.getItem('visitCount'));
+                                    count++;
+                                    localStorage.setItem('visitCount', count);
+                                }
+                        
+                                // บันทึกใน sessionStorage ว่า session นี้ได้เข้าชมแล้ว
+                                sessionStorage.setItem('hasVisited', 'true');
+                            }
+                        
+                            // แสดงจำนวนการเข้าชม
+                            document.write(" จำนวนการเข้าชม: " + localStorage.getItem('visitCount'));
+                        </script>
                         
                              </section>     
                 </main>

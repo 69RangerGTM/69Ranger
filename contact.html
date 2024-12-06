@@ -90,26 +90,7 @@
                         </a> 
 
                         
-                         <script>
-                            // ตรวจสอบว่า session นี้มีการนับแล้วหรือไม่
-                            if (!sessionStorage.getItem('hasVisited')) {
-                                // ถ้ายังไม่เคยนับใน session นี้
-                                if (!localStorage.getItem('visitCount')) {
-                                    localStorage.setItem('visitCount', 1); // กำหนดค่าเริ่มต้น
-                                } else {
-                                    let count = parseInt(localStorage.getItem('visitCount'));
-                                    count++;
-                                    localStorage.setItem('visitCount', count);
-                                }
                         
-                                // บันทึกใน sessionStorage ว่า session นี้ได้เข้าชมแล้ว
-                                sessionStorage.setItem('hasVisited', 'true');
-                            }
-                        
-                            // แสดงจำนวนการเข้าชม
-                            document.write(" จำนวนการเข้าชม: " + localStorage.getItem('visitCount'));
-                        </script>
-
                            
 <section class="tm-content">
                         <iframe src="https://discord.com/widget?id=395940778418896907&theme=dark" width="500" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
